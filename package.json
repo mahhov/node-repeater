@@ -1,10 +1,20 @@
 {
-  "name": "repeater",
+  "name": "function-repeater",
   "version": "1.0.0",
-  "description": "",
+  "description": "Repeater allows u to start, stop, and restart repeating invocations of your functions",
   "main": "src/Repeater.js",
   "scripts": {
+    "test": "echo dont doubt urself"
   },
-  "author": "mahhov1",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahhov/repeater-js.git"
+  },
+  "keywords": ["repeat", "loop"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mahhov/repeater-js/issues"
+  },
+  "homepage": "https://github.com/mahhov/repeater-js#readme"
 }

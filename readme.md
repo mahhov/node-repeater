@@ -19,8 +19,6 @@ queryRepeater.start();
 ```js
 const Repeater = require('Repeater');
 
-const Repeater = require('./Repeater');
-
 let i = 0;
 let add1 = () => i++;
 let subtract3 = () => i -= 3;
@@ -45,8 +43,6 @@ setTimeout(() => {
     accumulateRepeater.stop();
     console.log(accumulation); // [-1, 0, 1, 3, 4, 5, 4, 5, 6, 3, 3, 0, -3]
 }, 3100);
-
-
 ```
 
 ### Output explained

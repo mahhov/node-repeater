@@ -1,0 +1,10 @@
+{
+  "name": "repeater",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/Repeater.js",
+  "scripts": {
+  },
+  "author": "mahhov1",
+  "license": "ISC"
+}

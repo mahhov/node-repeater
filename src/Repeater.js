@@ -7,6 +7,10 @@ class Repeater {
             this.start();
     }
 
+    setHandler(hanler) {
+        this.handler = handler();
+    }
+
     setPeriod(period) {
         this.period = period;
     }

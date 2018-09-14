@@ -17,7 +17,7 @@ queryRepeater.start();
 ## simple example
 
 ```js
-const Repeater = require('Repeater');
+const Repeater = require('function-repeater');
 
 let i = 0;
 let add1 = () => i++;
@@ -69,6 +69,10 @@ setTimeout(() => {
 ### `new Repeater(function handler, integer period, boolean start)`
 
 Creates a new repeater that will invoke `handler` every `period` milliseconds. If `period` is omitted, it will default to 0. If `start` is truthy, the repeater will automatically invoke it's `start` method (see below).
+
+### `setHandler(function handler)`
+
+Sets the `handler` which will be invoked when the repeater is started. If the repeater is in progress, the new `handler` will not take affect until the repeater is stopped and restarted.
 
 ### `setPeriod(integer period)`
 

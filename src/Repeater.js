@@ -1,14 +1,14 @@
 class Repeater {
     constructor(handler, period, start) {
-        this.handler = handler;
+        this.setHandler(handler);
         this.setPeriod(period);
         this.runFlag = {value: false};
         if (start)
             this.start();
     }
 
-    setHandler(hanler) {
-        this.handler = handler();
+    setHandler(handler) {
+        this.handler = handler;
     }
 
     setPeriod(period) {

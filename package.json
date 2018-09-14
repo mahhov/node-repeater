@@ -1,6 +1,6 @@
 {
   "name": "function-repeater",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Repeater allows u to start, stop, and restart repeating invocations of your functions",
   "main": "src/Repeater.js",
   "scripts": {

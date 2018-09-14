@@ -20,16 +20,17 @@ class Repeater {
           this.setPeriod(period);
         this.stop();
         this.runFlag.value = true;
-        Repeater.repeat(this.handler, this.period, this.runFlag);
+        Repeater.repeat(this.handler, this.period, this.runFlag, this);
     }
 
     stop() {
         this.runFlag.value = false;
     }
 
-    static async repeat(handler, period, runFlag) {
+    static async repeat(handler, period, runFlag, repeater) {
+        let i = 0;
         while (runFlag.value) {
-            handler();
+            handler(repeater, i++);
             await Repeater.sleep(period);
         }
     }

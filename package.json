@@ -4,7 +4,7 @@
   "description": "Repeater allows u to start, stop, and restart repeating invocations of your functions",
   "main": "src/Repeater.js",
   "scripts": {
-    "test": "echo dont doubt urself"
+    "test": "node test/test.js"
   },
   "repository": {
     "type": "git",

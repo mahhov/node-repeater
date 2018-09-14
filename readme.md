@@ -85,3 +85,16 @@ Starts the repeater with the specified `period` or the current `period`. If the 
 ### `stop()`
 
 Stops the repeater.
+
+## `handler` paramters
+
+The `handler` is passed in two paramters, the `repeater` itself, and an incrementing index;
+
+```js
+new Repeater(
+    (repeater, i) => {
+        console.log(i); // 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+        if (i === 10)
+            repeater.stop();
+    }, 10, true);
+```
